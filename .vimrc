@@ -55,6 +55,8 @@ filetype plugin indent on
 set nowrap
 " Wrap lines at convenient points
 set linebreak
+" Show a break at 80 characters
+set colorcolumn=80
 
 " --- Completion ---
 " Show list of command completion options
