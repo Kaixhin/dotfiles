@@ -9,6 +9,9 @@ set -o notify
 # Don't use ^D to exit
 set -o ignoreeof
 
+# Use globstar
+shopt -s globstar
+
 # Use case-insensitive filename globbing
 shopt -s nocaseglob
 
@@ -62,4 +65,4 @@ alias fgrep='fgrep --color=auto'              # show differences in colour
 alias ls='ls -hF --color=tty'                 # classify files in colour
 alias ll='ls -l'                              # long list
 alias la='ls -A'                              # all but . and ..
-alias lal='ll -A'                             # all but . and .. in a long list
+alias lal='la -l'                             # all but . and .. in a long list
