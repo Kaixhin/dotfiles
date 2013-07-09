@@ -5,7 +5,7 @@
   "eqeqeq"        : true,     // true: Require triple equals (===) for comparison
   "undef"         : true,     // true: Require all non-global variables to be declared (prevents global leaks)
   "unused"        : true,     // true: Require all defined variables be used
-  "strict"        : true,     // true: Requires all functions run in ES5 Strict Mode
+  "strict"        : false,    // true: Requires all functions run in ES5 Strict Mode
   // Relaxing
   "asi"           : false,     // true: Tolerate Automatic Semicolon Insertion (no semicolons)
   "debug"         : false,     // true: Allow debugger statements e.g. browser breakpoints.
@@ -23,15 +23,15 @@
   "couch"         : false,    // CouchDB
   "devel"         : true,     // Development/debugging (alert, confirm, etc)
   "dojo"          : false,    // Dojo Toolkit
-  "jquery"        : false,    // jQuery
+  "jquery"        : true,     // jQuery
   "mootools"      : false,    // MooTools
-  "node"          : false,    // Node.js
-  "nonstandard"   : false,    // Widely adopted globals (escape, unescape, etc)
+  "node"          : true,     // Node.js
+  "nonstandard"   : true,     // Widely adopted globals (escape, unescape, etc)
   "prototypejs"   : false,    // Prototype and Scriptaculous
   "rhino"         : false,    // Rhino
   "worker"        : false,    // Web Workers
   "wsh"           : false,    // Windows Scripting Host
   "yui"           : false,    // Yahoo User Interface
   // Custom Globals
-  "predef"        : [ ]       // additional predefined global variables
+  "predef"        : ["define"]       // additional predefined global variables
 }
