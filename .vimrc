@@ -75,6 +75,12 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+" Use Syntastic
+let g:syntastic_check_on_open=1
+let g:syntastic_mode_map = {'mode': 'active', 'active_filetypes': [], 'passive_filetypes': ['html']}
+" Use jshint (uses ~/.jshintrc)
+let g:syntastic_javascript_checkers = ['jshint']
+
 " --- GUI ---
 if has('gui_running')
   set guifont=Consolas:h11
