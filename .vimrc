@@ -83,5 +83,4 @@ let g:syntastic_javascript_checkers = ['jshint']
 " --- GUI ---
 if has('gui_running')
   set guifont=Consolas:h11
-  set columns=84
 endif
