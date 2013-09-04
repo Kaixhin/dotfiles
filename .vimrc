@@ -82,7 +82,7 @@ let g:syntastic_javascript_checkers = ['jshint']
 
 " --- GUI ---
 if has('gui_running')
-  set guifont=Source Code Pro:h12
+  set guifont=Source_Code_Pro:h12
 endif
 
 " --- Unicode Support ---
