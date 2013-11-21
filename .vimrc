@@ -2,6 +2,12 @@
 " This must be first because it changes other options as a side effect
 set nocompatible
 
+" On Windows, also use '.vim' instead of 'vimfiles'
+" This makes synchronization across (heterogeneous) systems easier.
+if has('win32') || has('win64')
+  set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after
+endif
+
 " Use Pathogen to load all plugins in ~/.vim/bundle
 call pathogen#infect()
 call pathogen#helptags()
