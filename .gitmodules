@@ -37,3 +37,6 @@
 [submodule ".vim/bundle/vim-fbp"]
 	path = .vim/bundle/vim-fbp
 	url = git@github.com:ninegrid/vim-fbp.git
+[submodule ".vim/bundle/vim-protobuf"]
+	path = .vim/bundle/vim-protobuf
+	url = git@github.com:uarun/vim-protobuf.git
