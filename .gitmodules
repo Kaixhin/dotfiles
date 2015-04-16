@@ -37,3 +37,9 @@
 [submodule ".vim/bundle/vim-fbp"]
 	path = .vim/bundle/vim-fbp
 	url = git@github.com:ninegrid/vim-fbp.git
+[submodule ".vim/bundle/vim-pandoc"]
+	path = .vim/bundle/vim-pandoc
+	url = git@github.com:vim-pandoc/vim-pandoc.git
+[submodule ".vim/bundle/vim-pandoc-syntax"]
+	path = .vim/bundle/vim-pandoc-syntax
+	url = git@github.com:vim-pandoc/vim-pandoc-syntax.git
