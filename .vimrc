@@ -57,8 +57,8 @@ set expandtab
 " Load filetype plugins and indentation
 filetype plugin indent on
 
-" Do no wrap lines
-set nowrap
+" Wrap lines
+set wrap
 " Wrap lines at convenient points
 set linebreak
 " Show a break at 80 characters
