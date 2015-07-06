@@ -1,0 +1,22 @@
+[core]
+  excludesfile = ~/.gitignore
+  fileMode = false
+[branch]
+  autosetupmerge = true
+[color]
+  ui = auto
+  branch = auto
+  diff = auto
+  status = auto
+  pager = true
+[alias]
+  sts = status -s
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  ls = ls-files
+  # Show ignored files
+  ign = ls-files -o -i --exclude-standard
+[push]
+  default = simple
+[include]
+  path = ~/.gitconfig.local
