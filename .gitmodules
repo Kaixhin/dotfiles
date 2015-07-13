@@ -30,13 +30,13 @@
 	url = https://github.com/scrooloose/syntastic
 [submodule ".vim/bundle/vim-mustache-handlebars"]
 	path = .vim/bundle/vim-mustache-handlebars
-	url = https://github.com:mustache/vim-mustache-handlebars
+	url = https://github.com/mustache/vim-mustache-handlebars
 [submodule ".vim/bundle/vim-css3-syntax"]
 	path = .vim/bundle/vim-css3-syntax
-	url = https://github.com:hail2u/vim-css3-syntax
+	url = https://github.com/hail2u/vim-css3-syntax
 [submodule ".vim/bundle/vim-fbp"]
 	path = .vim/bundle/vim-fbp
-	url = https://github.com:ninegrid/vim-fbp
+	url = https://github.com/ninegrid/vim-fbp
 [submodule ".vim/bundle/vim-protobuf"]
 	path = .vim/bundle/vim-protobuf
-	url = https://github.com:uarun/vim-protobuf
+	url = https://github.com/uarun/vim-protobuf
