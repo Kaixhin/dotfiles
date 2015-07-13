@@ -2,3 +2,6 @@
 if [ -f "${HOME}/.bashrc" ] ; then
   source "${HOME}/.bashrc"
 fi
+
+# Set up directory colors
+eval `dircolors .dircolors`
