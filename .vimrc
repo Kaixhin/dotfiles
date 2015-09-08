@@ -56,6 +56,8 @@ set expandtab
 
 " Load filetype plugins and indentation
 filetype plugin indent on
+" Associate .conf files with the DOS/Windows ini filetype
+au BufRead,BufNewFile *.conf setfiletype dosini
 
 " Wrap lines
 set wrap
