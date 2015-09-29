@@ -43,3 +43,6 @@
 [submodule ".vim/bundle/Dockerfile.vim"]
 	path = .vim/bundle/Dockerfile.vim
 	url = https://github.com/ekalinin/Dockerfile.vim.git
+[submodule ".vim/bundle/apiblueprint.vim"]
+	path = .vim/bundle/apiblueprint.vim
+	url = https://github.com/kylef/apiblueprint.vim.git
