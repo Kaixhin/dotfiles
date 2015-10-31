@@ -46,3 +46,6 @@
 [submodule ".vim/bundle/apiblueprint.vim"]
 	path = .vim/bundle/apiblueprint.vim
 	url = https://github.com/kylef/apiblueprint.vim.git
+[submodule ".vim/bundle/vim-raml"]
+	path = .vim/bundle/vim-raml
+	url = https://github.com/kennethzfeng/vim-raml.git
