@@ -1,6 +1,7 @@
 [core]
   excludesfile = ~/.gitignore
   fileMode = false
+  pager = less -r
 [branch]
   autosetupmerge = true
 [color]
@@ -16,6 +17,7 @@
   ls = ls-files
   # Show ignored files
   ign = ls-files -o -i --exclude-standard
+  wd = diff --word-diff
 [push]
   default = simple
 [include]
