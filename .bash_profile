@@ -4,4 +4,4 @@ if [ -f "${HOME}/.bashrc" ] ; then
 fi
 
 # Set up directory colors
-eval `dircolors .dircolors`
+eval `dircolors ~/.dircolors`
