@@ -88,9 +88,30 @@ let g:syntastic_mode_map = {'mode': 'active', 'active_filetypes': [], 'passive_f
 " Use jshint (uses ~/.jshintrc)
 let g:syntastic_javascript_checkers = ['jshint']
 
-" --- GUI ---
+" --- GUI + Scripts —-—
 if has('gui_running')
-  set guifont=Source_Code_Pro:h12
+  if has('win32') || has('win64')
+    " Windows
+    set guifont=Source_Code_Pro:h12
+  else
+    if has("unix")
+      let s:uname = system("uname")
+      if s:uname == "Darwin\n"
+        " OS X
+        set guifont=Source\ Code\ Pro:h12
+        
+        " Run ./build.sh with F5
+        nnoremap <F5> <esc>:!cd $(cd "$(dirname "%")" && pwd -P); ./build.sh<enter><enter>
+        inoremap <F5> <esc>:!cd $(cd "$(dirname "%")" && pwd -P); ./build.sh<enter><enter>
+      else
+        " Linux
+        set guifont=Source\ Code\ Pro\ Medium\ 14
+
+        nnoremap <F5> <esc>:!cd $(dirname $(readlink -m %)); ./build.sh<enter><enter>
+        inoremap <F5> <esc>:!cd $(dirname $(readlink -m %)); ./build.sh<enter><enter>
+      endif
+    endif
+  endif
 endif
 
 " --- Unicode Support ---
