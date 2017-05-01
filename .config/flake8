@@ -1,0 +1,7 @@
+[flake8]
+# E111: Indentation is not a multiple of four
+# E114: Indentation is not a multiple of four (comment)
+# E121: Continuation line under-indented for hanging indent
+ignore = E111, E114, E121
+max-line-length = 160
+exclude = .git

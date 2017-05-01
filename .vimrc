@@ -56,6 +56,8 @@ set expandtab
 
 " Load filetype plugins and indentation
 filetype plugin indent on
+" Rewrite Python indentation
+autocmd FileType python setlocal shiftwidth=2 softtabstop=2 tabstop=2
 " Associate .conf files with the DOS/Windows ini filetype
 au BufRead,BufNewFile *.conf setfiletype dosini
 
