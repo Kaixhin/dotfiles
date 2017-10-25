@@ -2,6 +2,7 @@
 # E111: Indentation is not a multiple of four
 # E114: Indentation is not a multiple of four (comment)
 # E121: Continuation line under-indented for hanging indent
-ignore = E111, E114, E121
+# E402: module level import not at top of file
+ignore = E111, E114, E121, E402
 max-line-length = 160
 exclude = .git
