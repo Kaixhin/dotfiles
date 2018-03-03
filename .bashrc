@@ -63,6 +63,7 @@ alias fgrep='fgrep --color=auto'              # show differences in colour
 
 # Some shortcuts for different directory listings
 alias ls='ls -hF --color=tty'                 # classify files in colour
+#alias ls='ls -hFG'                           # classify files in colour (OSX)
 alias ll='ls -l'                              # long list
 alias la='ls -A'                              # all but . and ..
 alias lal='la -l'                             # all but . and .. in a long list
