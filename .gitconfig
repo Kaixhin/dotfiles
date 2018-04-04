@@ -15,9 +15,11 @@
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
   ls = ls-files
-  # Show ignored files
   ign = ls-files -o -i --exclude-standard
   wd = diff --word-diff
+  # smsync && smup helps recover from submodule problems
+  smsync = submodule sync --recursive
+  smup = submodule update --recursive
 [push]
   default = simple
 [include]
