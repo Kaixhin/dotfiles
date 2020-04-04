@@ -65,8 +65,8 @@ au BufRead,BufNewFile *.conf setfiletype dosini
 set wrap
 " Wrap lines at convenient points
 set linebreak
-" Show a break at 80 characters
-set colorcolumn=80
+" Show a break at 120 characters
+set colorcolumn=120
 
 " --- Completion ---
 " Show list of command completion options
@@ -85,8 +85,11 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+let g:python_highlight_all = 1
 " Use Syntastic
 let g:syntastic_mode_map = {'mode': 'active', 'active_filetypes': [], 'passive_filetypes': ['html']}
+let g:syntastic_python_python_exec = 'python3'
+let g:syntastic_python_checkers = ['python']
 " Use jshint (uses ~/.jshintrc)
 let g:syntastic_javascript_checkers = ['jshint']
 
@@ -100,7 +103,7 @@ if has('gui_running')
       let s:uname = system("uname")
       if s:uname == "Darwin\n"
         " OS X
-        set guifont=Source\ Code\ Pro:h12
+        set guifont=Source\ Code\ Pro:h14
         
         " Run ./build.sh with F5
         nnoremap <F5> <esc>:!cd $(cd "$(dirname "%")" && pwd -P); ./build.sh<enter><enter>
